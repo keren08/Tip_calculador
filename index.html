@@ -24,13 +24,25 @@
           </div>
         </div>
 
-        <div class="form__btns">
-          <button type="button" class="form__btns__button">5%</button>
-          <button type="button" class="form__btns__button">10%</button>
-          <button type="button" class="form__btns__button">15%</button>
-          <button type="button" class="form__btns__button">20%</button>
-          <button type="button" class="form__btns__button">25%</button>
-          <button type="button" class="form__btns__button">50%</button>
+        <div class="form__btns" id="form-btn">
+          <button type="button" class="form__btns__button" value="0.05">
+            5%
+          </button>
+          <button type="button" class="form__btns__button" value="0.15">
+            10%
+          </button>
+          <button type="button" class="form__btns__button" value="0.15">
+            15%
+          </button>
+          <button type="button" class="form__btns__button" value="0.20">
+            20%
+          </button>
+          <button type="button" class="form__btns__button" value="0.25">
+            25%
+          </button>
+          <button type="button" class="form__btns__button" value="0.50">
+            50%
+          </button>
           <input class="form__btns__button" type="text" placeholder="Custom" />
         </div>
 
@@ -41,6 +53,7 @@
             <input type="number" id="total-people" />
           </div>
         </div>
+        <button type="submit">Calculate</button>
       </form>
       <!-- caja de resultados-->
       <section id="result" class="result">
@@ -60,6 +73,6 @@
     </main>
 
     <!-- Archivo de JavaScript -->
-    <script src="./js/main.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
