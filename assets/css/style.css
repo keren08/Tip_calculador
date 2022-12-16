@@ -68,6 +68,7 @@ body {
   font-size: 1rem;
   padding: 2%;
   border-radius: 20px;
+  border: none;
 }
 
 .form__contenedor__btns {
@@ -82,6 +83,7 @@ body {
   font-size: 1.2rem;
   font-weight: 900;
   padding: 4% 2.5%;
+  border: none;
 }
 .form__contenedor__btns .color__botones {
   width: 45%;
@@ -101,6 +103,10 @@ body {
 .form__contenedor__btns .color__input::placeholder {
   color: hsl(184deg, 14%, 56%);
   font-weight: 600;
+}
+
+.active {
+  background-color: hsl(172deg, 67%, 45%) !important;
 }
 
 /*# sourceMappingURL=style.css.map */

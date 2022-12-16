@@ -82,6 +82,7 @@ body {
     font-size: 1rem;
     padding: 2%;
     border-radius: 20px;
+    border: none;
   }
 }
 
@@ -100,6 +101,7 @@ body {
         font-size: 1.2rem;
         font-weight: 900;
         padding: 4% 2.5%;
+        border: none;
       }
 
       .color__botones {
@@ -126,4 +128,8 @@ body {
       }
     }
   }
+}
+
+.active {
+  background-color: $fondo-verde-claro !important;
 }
