@@ -14,11 +14,13 @@ let porcenTip;
 
 tipsDiv.addEventListener("click", (e) => {
   porcenTip = e.target;
+  let id = e.target.id;
+  let type = e.target.type;
 
-  const active = document.getElementById(e.target.id);
-  active.classList.add("active");
+  desacBackgroundGreen();
+  activeBackgroundGreen(id,type);
 });
-
+//captura el evento al hacer click en calcular y ejecuta las operaciones
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -35,3 +37,20 @@ form.addEventListener("submit", (e) => {
   total = parseInt(total).toFixed(2);
   actualizarTotal(total, resultTotal, tip, resultTip);
 });
+
+//activar el boton al cual se le dio click
+function activeBackgroundGreen(id,type){
+  if(type == 'button'){
+    const active = document.getElementById(id);
+    active.classList.add("active");
+    }
+}
+
+//funcion para quitar el fondo verde al seleccionar boton diferente
+function desacBackgroundGreen() { 
+  const botones = document.querySelectorAll('.form__contenedor__btns__button');
+  for(let i=0;i< botones.length;i++){
+  botones[i].classList.remove('active')
+  }
+}
+
