@@ -5,64 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Tip Calculador</title>
   </head>
   <body>
     <!-- Encabezado -->
     <header id="header" class="header">
-      <h1 class="header__title">Splitter</h1>
+      <img src="assets/img/logo.svg" alt="logo" />
     </header>
 
     <!-- Main Section -->
-    <main id="main">
+    <main id="main" class="main">
       <form id="main-form" class="form">
         <div class="form__box">
           <label class="form__box__label">Bill</label>
           <div class="form__box__inputs">
-            <i class="fa-solid fa-dollar-sign"></i>
-            <input type="number" id="total-bill" />
+            <img src="assets/img/icon-dollar.svg" alt="dolar" />
+            <input type="number" id="total-bill" placeholder="0" />
           </div>
         </div>
 
-        <div class="form__btns" id="form-btn">
-          <button type="button" class="form__btns__button" value="0.05">
-            5%
-          </button>
-          <button type="button" class="form__btns__button" value="0.15">
-            10%
-          </button>
-          <button type="button" class="form__btns__button" value="0.15">
-            15%
-          </button>
-          <button type="button" class="form__btns__button" value="0.20">
-            20%
-          </button>
-          <button type="button" class="form__btns__button" value="0.25">
-            25%
-          </button>
-          <button type="button" class="form__btns__button" value="0.50">
-            50%
-          </button>
-          <input class="form__btns__button" type="text" placeholder="Custom" />
-        </div>
+        <div class="form__contenedor">
+          <label class="form__box__label">Select Tip %</label>
 
+          <div class="form__contenedor__btns" id="form-btn">
+            <button
+              type="button"
+              class="form__contenedor__btns__button color__botones"
+              value="0.05"
+              id="buton1"
+            >
+              5%
+            </button>
+            <button
+              type="button"
+              class="form__contenedor__btns__button color__botones"
+              value="0.15"
+              id="buton2"
+            >
+              10%
+            </button>
+            <button
+              type="button"
+              class="form__contenedor__btns__button color__botones"
+              value="0.15"
+              id="buton3"
+            >
+              15%
+            </button>
+            <button
+              type="button"
+              class="form__contenedor__btns__button color__botones"
+              value="0.25"
+              id="buton4"
+            >
+              25%
+            </button>
+            <button
+              type="button"
+              class="form__contenedor__btns__button color__botones"
+              value="0.50"
+              id="buton5"
+            >
+              50%
+            </button>
+            <input
+              class="form__contenedor__btns__button color__input"
+              type="text"
+              placeholder="Custom"
+              id="buton6"
+            />
+          </div>
+        </div>
         <div class="form__box">
           <label class="form__box__label">Number of People</label>
           <div class="form__box__inputs">
-            <i class="fa-solid fa-user"></i>
-            <input type="number" id="total-people" />
+            <img src="assets/img/icon-person.svg" alt="" />
+            <input type="number" id="total-people" placeholder="0" />
           </div>
         </div>
-        <button type="submit">Calculate</button>
+        <button type="submit" class="form__button">Calculate</button>
       </form>
       <!-- caja de resultados-->
       <section id="result" class="result">
-        <div class="result__tip">
+        <div class="result__contenedor">
           <h3>Tip Amount <span>/ person</span></h3>
           <p id="result-tip">$0.00</p>
         </div>
 
-        <div class="result__total">
+        <div class="result__contenedor">
           <h3>Total <span>/ person</span></h3>
           <p id="result-total">$0.00</p>
         </div>
