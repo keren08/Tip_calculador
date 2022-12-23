@@ -327,3 +327,12 @@ body {
     }
   }
 }
+
+.error {
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.text__error {
+  color: red;
+}

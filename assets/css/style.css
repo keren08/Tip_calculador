@@ -271,5 +271,13 @@ body {
     padding: 1rem;
   }
 }
+.error {
+  border: 1px solid red;
+  border-radius: 15px;
+}
+
+.text__error {
+  color: red;
+}
 
 /*# sourceMappingURL=style.css.map */
